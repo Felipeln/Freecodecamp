@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: black;
+  margin: 0 auto;
+  background: url(https://i.imgur.com/dACrBcx.jpg)
+}
+
+#survey-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#title {
+  text-align: center;
+  padding: 20px;
+  font-size: 2em;
+}
+#description {
+  font-style: italic;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+p {
+  font-size: 1em;
+}
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.container {
+	min-width: 400px;
+  max-width: 700px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  padding: 30px;
+  background-color: white;
+  margin: 50px auto;
+  border: 2px solid black;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  box-shadow: none;
+  border: solid rgb(0, 0, 0);
+}
+
+::placeholder {
+  color: black;
+  opacity: 0.8;
+  position: relative;
+  left: -10px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #eb675e;
+  border-radius: 0.25rem;
+}
+.form-control:focus { 
+  border-color: #8a8c8d;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem #eb675e;
+}
+button#submit{
+	 width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  box-shadow: none;
+  border: solid rgb(0, 0, 0);
+}
+#submit {
+  box-shadow: inset 0px 39px 0px -24px #020202;
+  background: linear-gradient(to bottom, #1f1f1f 5%, #000000 100%);
+  background-color: #000000;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 6px 15px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #b23e35;
+}
+#submit:hover {
+  background: linear-gradient(to bottom, #1f1f1f 5%, #000000 100%);
+  background-color: #000000;
+}
+#submit:active {
+  position: relative;
+  top: 1px;
+}
+
+select.form-control {
+  background-color: black;
+  color: #ffffff;
+	border: none;
+}
+
+
+.titulos {
+  padding-top: 0.5rem;
+}
+
+input[type="radio"] {
+  background-color: black;
+  color: #f2f2f2;
+}

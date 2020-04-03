@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+    <body>
+      <div class="container">
+            <header id='header'>
+              <h1 id="title">Survey Form</h1>
+              <p id="description">Thank you for taking the time to help us improve the platform
+              </p>
+            </header>
+            <form id="survey-form">
+              <div class="Form-group">
+                <label for="name" id="name-label">Name:</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="&nbsp; Enter your name"
+                  required
+                />
+                </div>
+              <div class="Form-group">
+                <label for="email" id="email-label">Email:</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="&nbsp; Enter your email"
+                  required
+                       id="email"
+                />
+                </div>
+              <div class="Form-group">
+                <label for="number" id="number-label">Age(optional): </label>
+                <input
+                  type="number"
+                  name="number"
+                  id="number"
+                  min="10"
+                  max="100"
+                   class="form-control"
+                  placeholder="&nbsp; Enter your age"
+                />
+                </div>
+              
+                 <div class="Form-group">
+                      <label for="dropwdown"
+                        class="titulos">Which option best describes your current role?</label
+                      >
+                      <select name="dropdown" name='role' class='form-control' required id="dropdown">
+                        <option value="student">Student</option>
+                        <option value="Full time job">Full time job</option>
+                        <option value="Full time learner">Full time learner</option>
+                        <option value="prefer Not to say">Prefer not to say</option>
+                        <option value="Others">Others </option>
+                      </select>
+                 </div>
+              <div class="Form-group">
+                      <label for="" class="titulos">Do you watch streamns?</label> 
+                      <label for="">
+                          <input type="radio" name='option1' value='yes'>
+                          Yes
+                      </label>
+                      <label for="">
+                          <input type="radio" value='no' name='option1' >
+                         no
+                      </label>
+                </div>
+                 <div class='Form-group'>
+                     <label for="" class="titulos">Which platform do you prefer?</label>
+                      <select name="Plataform" id="">
+                          <option value="select" disabled >Select an option</option>
+                          <option value="twitch">Twitch</option>
+                          <option value="Facebook">Facebook</option>
+                          <option value="Mixer">Mixer</option>
+                          <option value="Youtube">Youtube</option>
+                      </select>
+                 </div>
+                 <div class='Form-group'>
+                  <label for="" class="titulos">How often do you watch stream?
+                  </label>
+                  <select name="" id="">
+                    <option value="select" disabled >Select an option</option>
+                      <option value="Always">Always</option>
+                      <option value="Sometimes">Sometimes</option>
+                      <option value="Never">never</option>
+                  </select>
+                 </div>
+                  <div class='Form-group'>
+                      <label for="" class="titulos">What games do you watch?</label> 
+                      <label><input  type="checkbox" value='League of legends' name="LOL" id="">League of legends</label>
+                      <label><input  type="checkbox" value='CSGO<' name="CS" id="">CSGO</label>
+                     <label> <input  type="checkbox" value='Escape from tarkov' name="Tarkov" id="">Escape from tarkov</label>
+                      <label><input  type="checkbox" value='Fortnite' name="Fortnite" id="">Fortnite</label>
+                     <label> <input  type="checkbox" value='PUBG' name="Pubg" id="">PUBG</label>
+                      <label><input  type="checkbox" value='Apex legends' name="Apex" id="">Apex legends</label>
+                      <label><input  type="checkbox" value='Dota 2' name="dota" id="">Dota 2</label>
+                      <label><input  type="checkbox" value='World of Warcraft' name="Wow" id="">World of Warcraft</label>
+                      <label><input  type="checkbox" value='COD Warzone' name="Cod" id="">COD Warzone</label>
+                      <label><input  type="checkbox" value='GTA V<' name="GTA" id="">GTA V</label>
+                      <label><input  type="checkbox" value='FIFA' name="FIFA" id="">FIFA</label>
+                      <label><input  type="checkbox" value='Overwatch' name="Overwatcj" id="">Overwatch</label>
+                      <label><input  type="checkbox" value='Teamfight Tactics' name="TFT" id="">Teamfight Tactics</label>
+                      <label><input  type="checkbox" value='Rocket League' name="Rocket league" id="">Rocket League</label>
+                      <label><input type="checkbox" value='Free fire' name="Free fire" id="">Free fire</label>
+                  </div>
+                  <p >Any comments or suggestions?</p>
+                  <textarea name="" id="" cols="59" rows="10"></textarea> <br>
+                  <button id="submit">Submit</button>
+                </form>
+              </div>
+       </body>
+</html>
+

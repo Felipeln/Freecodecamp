@@ -1,0 +1,434 @@
+/* PALETA DE CORES UTILIZADA:
+    https://colorhunt.co/palette/141715
+*/
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #7bc67b;
+}
+/*  MENU DESKTOP */
+header {
+  display: block;
+  padding-bottom: 18vh;
+}
+div.logo {
+  width: 100px;
+}
+#header-img {
+  max-width: 100%;
+  height: auto;
+}
+#nav-bar {
+  z-index: 2; /* para o hover dos cards de preço nao sobreporem o menu*/
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #5a3921;
+  height: 18vh;
+}
+.lists {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+.lists li {
+  list-style: none;
+}
+.lists a {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.lists li a {
+  border-bottom: 1px solid teal;
+  padding: 11px;
+}
+
+.lists li a:hover {
+  border: 1px solid teal;
+  padding: 10px;
+}
+
+/* MENU MOBILE*/
+.menu {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+}
+.menu:hover {
+  box-shadow: 0 0 0 8px #fff, 0 0 0 8px #fff;
+}
+
+.hamburguer {
+  position: relative;
+  display: block;
+  background-color: #000;
+  width: 30px;
+  height: 2px;
+  top: 29px;
+  left: 15px;
+  transition: ease-in-out 0.5s;
+}
+.hamburguer::after,
+.hamburguer::before {
+  display: block;
+  background-color: #000;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: ease-in-out 0.5s;
+}
+.hamburguer::before {
+  top: -10px;
+}
+.hamburguer::after {
+  top: 10px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]:checked ~ label .hamburguer {
+  transform: rotate(45deg);
+}
+input[type="checkbox"]:checked ~ label .hamburguer:before {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+input[type="checkbox"]:checked ~ label .hamburguer:after {
+  transform: rotate(90deg);
+  top: 0;
+}
+/* BANNER*/
+#banner {
+  max-width: 2560px;
+  width: 100%;
+  height: auto;
+}
+/* Deixando imagem responsiva */
+#banner img {
+  max-width: 2560px; /* Máximo da largura da imagem */
+  width: 100%;
+  max-height: 760px; /* Máximo da altura da imagem */
+  min-height: auto; /* Mínimo da altura, por padrão “auto” */
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+/* Video */
+#video-container {
+  padding-top: 20px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Especialidades da Casa */
+h1 {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 2em;
+}
+.img-ilustrativa {
+  max-width: 15%;
+  height: auto;
+}
+.info {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+#first {
+  padding-top: 0px;
+}
+.info:last-child {
+  padding-bottom: 50px;
+}
+#informaçoes .desc {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  padding: 10px;
+}
+.desc h3 {
+  padding-bottom: 10px;
+}
+.desc p {
+  max-width: 567px;
+}
+/* PREÇO*/
+
+#card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 50px;
+}
+.card {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+  align-content: center;
+  border-radius: 5px;
+  border-radius: 8px;
+  background: #ffffb5;
+  box-shadow: 5px 5px 0px #666648, -5px -5px 0px #ffffff;
+  margin-bottom: 50px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+.card .card-icon,
+.card p,
+.card h2,
+.card button {
+  max-width: 200px;
+  align-self: center;
+  padding-bottom: 20px;
+}
+.card button {
+  padding: 15px;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  border-radius: 7px;
+  background-color: #5a3921;
+  color: #fff;
+  cursor: pointer;
+}
+.card button:hover {
+  background-color: #7d5e2a;
+}
+.card button:active {
+  transform: scale(0.95);
+}
+/* === FORM === */
+
+#form-container {
+  max-width: 500px;
+  width: 100%;
+  padding: 10px 20px;
+  margin: 0px auto;
+  border-radius: 8px;
+  margin-bottom: 50px;
+  border-radius: 8px;
+  background: #ffffb5;
+  box-shadow: 5px 5px 0px #666648, -5px -5px 0px #ffffff;
+}
+#form-container h1 {
+  padding-bottom: 20px;
+}
+#form-container input[type="text"],
+#form-container input[type="email"],
+textarea {
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  background-color: #d1f5d3;
+  margin-bottom: 30px;
+  padding: 8px;
+  border-radius: 3px;
+  font-weight: 300;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+#form-container input[type="text"]:focus,
+#form-container input[type="email"]:focus,
+textarea:focus {
+  background: #9dc6a7;
+}
+#form-container input[type="submit"] {
+  position: relative;
+  display: block;
+  padding: 19px 39px 18px 39px;
+  color: #fff;
+  margin: 0 auto;
+  background-color: #5a3921;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  width: 100%;
+  border: 1px solid #7a553b;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
+}
+#form-container input[type="submit"]:hover {
+  background-color: #7d5e2a;
+}
+#form-container input[type="submit"]:focus {
+  transform: scale(0.95);
+}
+#form-container label {
+  font-size: 1em;
+}
+#form-container label,
+input[type="submit"] {
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+#form-container textarea {
+  resize: none;
+}
+/* === Footer ===*/
+footer {
+  padding: 20px;
+  background-color: #5a3921;
+}
+footer p {
+  text-align: center;
+  color: #fff;
+}
+.author {
+  font-size: 1.2em;
+}
+.author a {
+  text-decoration: underline;
+  color: #fff;
+}
+.author a:hover {
+  color: #7bc67b;
+}
+
+/* === HR ===*/
+.h1-bar {
+  margin: 0 auto;
+  border: 0;
+  width: 40%;
+  background-image: -webkit-linear-gradient(
+    left,
+    #7bc67b8f,
+    #6b8c42,
+    #7bc67b8f
+  );
+  height: 5px;
+}
+.h-bar {
+  margin: 0 auto;
+  border: 0;
+  width: 30%;
+  background-image: -webkit-linear-gradient(
+    left,
+    #7bc67b8f,
+    #6b8c42,
+    #7bc67b8f
+  );
+  height: 5px;
+}
+
+/* media QUERYS */
+@media screen and (min-width: 1024px) {
+  .desc p {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .lists {
+    width: 55%;
+  }
+  #banner {
+    width: 100%;
+    height: auto;
+  }
+
+  #card-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Menu MOBILE */
+  .info {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .desc p,
+  .desc h3 {
+    text-align: justify;
+  }
+  .menu {
+    opacity: 1;
+    transition: ease 0.5s;
+  }
+  .lists {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    top: 18vh;
+    height: 30vh;
+    background-color: #5a3921;
+    align-items: center;
+    opacity: 0;
+  }
+  .lists li a {
+    border-bottom: 1px solid teal;
+  }
+  .lists li a:hover {
+    border: 1px solid teal;
+    background: none;
+  }
+  input[type="checkbox"]:checked ~ .lists {
+    opacity: 1;
+    transition: ease 0.5s;
+  }
+  .img-ilustrativa {
+    max-width: 115px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  #form-container {
+    max-width: 85%;
+  }
+}
+@media screen and (max-width: 425px) {
+  #banner {
+    display: none;
+  }
+  .desc {
+    display: flex;
+    align-content: center;
+  }
+  .desc p,
+  .desc h3 {
+    text-align: justify;
+  }
+  #form-container {
+    max-width: 85%;
+  }
+  .img-ilustrativa {
+    max-width: 115px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 375px) {
+  #form-container {
+    max-width: 85%;
+  }
+  .img-ilustrativa {
+    max-width: 115px;
+    height: auto;
+  }
+}

@@ -13,8 +13,13 @@
             <header>Flexbox Documentation</header>
             <ul>
                 <li><a class="nav-link"  href="#">Introduçao</a></li>
-                <li><a  class="nav-link"href="#"></a></li>
-                <li><a  class="nav-link"href="#"></a></li>
+                <li><a  class="nav-link"href="#">Primeiro passo</a></li>
+                <li><a  class="nav-link"href="#">Direcao</a></li>
+                <li><a class="nav-link" href="#">Linhas de inicio e fim</a></li>
+                <li><a class="nav-link" href="#">Alinhando items Horizontalmente</a></li>
+                <li><a class="nav-link" href="#"></a></li>
+                <li><a class="nav-link" href="#"></a></li>
+                <li><a class="nav-link" href="#"></a></li>
                 <li><a class="nav-link" href="#"></a></li>
                 <li><a class="nav-link" href="#"></a></li>
             </ul>
@@ -68,7 +73,7 @@
         </section>
 
         <section class="main-section">
-            <header>Alinhando items</header>
+            <header>Alinhando items horizontalmente</header>
            <p><b>Justify-content</b> é uma propriedade que define o alinhamento dos Flex Itens horizontalmente ao longo do eixo principal do contêiner.</p>
            <ul>
                <li><b>flex-start</b> - Esse é o valor padrão. Os Flex Itens são alinhados a partir do início do contêiner;</li>
@@ -84,11 +89,57 @@
         </section>
 
         <section class="main-section">
-            <header></header>
+            <header>Alinhando items</header>
+            <p><b>Align-items</b> é uma propriedade que define como os Flex Itens serão distribuídos ao longo do eixo transversal do contêiner. Conheça os possíveis valores para esta propriedade</p>
+            <ul>
+                <li><b>stretch</b> -  Esse é o valor padrão. Neste caso os Flex Itens serão esticados para preencher toda a dimensão do eixo transversal igualmente;</li>
+                <li><b>flex-start</b> - Desloca os Flex Itens para o início do eixo transversal;</li>
+                <li><b>flex-end</b> - Desloca os Flex Itens para o final do eixo transversal;</li>
+                <li><b>center</b> - Os Flex Itens são centralizados no eixo transversal;</li>
+                <li><b>baseline</b> - Alinha os Flex Itens a partir da base da primeira linha de texto de cada um deles.</li>
+            </ul>
+            <p>Veja no exemplo abaixo:</p>
+            <iframe width="100%" height="300" src="//jsfiddle.net/zevolutionz/zgey79dv/5/embedded/result,html,css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+        </section>
+
+        <section class="main-section">
+            <header>Alinhando conteudo</header>
+            <p><b>Align-content</b> é uma propriedade que define como as linhas são distribuídas ao longo do eixo transversal do contêiner. Como está propriedade trabalha com a distribuição das linha, ele é a aplicada quando o Flex Container é multilinhas, ou seja, recebe <b>flex-wrap</b>  com o valor <b>wrap</b>. Conheça os possíveis valores para esta propriedade:</p>
+            <ul>
+                <li><b>stretch</b> - Este é o valor padrão. As linhas são distribuídas uniformemente ao longo do eixo transversal.</li>
+                <li><b>flex-start</b> - Distribui as linhas a partir do início do eixo transversal;</li>
+                <li><b>flex-end</b> - Distribui as linhas a partir do fim do eixo transversal;</li>
+                <li><b>center</b> - Mantém as linhas no centro do eixo transversal;</li>
+                <li><b>space-between</b> - Cria um espaçamento entre as linhas. Onde a primeira linha é deslocada para o início do eixo transversal, a última é deslocada para o final do eixo transversal;</li>
+                <li><b>space-around:</b> - As linhas são uniformemente distribuídos ao longo do eixo transversal, onde é criado um espaçamento ao redor delas. Com isso, a primeira e o última linha possuirão margens e não ficaram grudadas as extremidades do contêiner.</li>
+            </ul>
+            <p>Veja no exemplo abaixo:</p>
+            <iframe width="100%" height="300" src="//jsfiddle.net/zevolutionz/5s46fkxe/14/embedded/result,html,css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+            <p><b>OBS</b>: Com essas mesmas aplicações é possível verificar o comportamento dos Flex Itens mudando o Eixo Principal da posição horizontal para vertical através da propriedade <b>flex-direction</b> com o valor <b>column</b>.</p>
+        </section>
+
+        <section class="main-section">
+            <header>Tamanho dos itens flexiveis</header>
+            <p>flex-basis define o tamanho inicial que um Flex Item deve ter antes que o espaço ao seu redor seja distribuído por outras propriedades.</p>
+            <p>Veja no exemplo abaixo:</p>
+        </section>
+
+        <section class="main-section">
+            <header>itens flexiveis</header>
+            <p>A propriedade <b>flex-grow</b> serve para especificar o fator de crescimento que um Flex Item terá em relação aos outros Flex Itens encontrados em um Flex Container. O valor especificado deve ser um número positivo. Por padrão o valor de flex-grow é 0, ou seja, os Flex Itens não crescem.</p>
+            <p>Quanto maior o valor de flex-grow, mais o Flex Item poderá crescer relativamente aos outros items.</p>
+            <p>Veja no exemplo abaixo:</p>
+            <iframe width="100%" height="300" src="//jsfiddle.net/zevolutionz/bmaf3usj/3/embedded/result,html,css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
         </section>
 
         <section class="main-section">
             <header></header>
+            <p>Veja no exemplo abaixo:</p>
+        </section>
+
+        <section class="main-section">
+            <header></header>
+            <p>Veja no exemplo abaixo:</p>
         </section>
 
     </main>

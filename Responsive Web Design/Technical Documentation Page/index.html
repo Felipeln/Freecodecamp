@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,20 +12,24 @@
         <nav id="nav-bar">
             <header>Flexbox Documentation</header>
             <ul>
-                <li><a class="nav-link"  href="#">Introduçao</a></li>
-                <li><a  class="nav-link"href="#">Primeiro passo</a></li>
-                <li><a  class="nav-link"href="#">Direcao</a></li>
-                <li><a class="nav-link" href="#">Linhas de inicio e fim</a></li>
-                <li><a class="nav-link" href="#">Alinhando items Horizontalmente</a></li>
-                <li><a class="nav-link" href="#"></a></li>
-                <li><a class="nav-link" href="#"></a></li>
-                <li><a class="nav-link" href="#"></a></li>
-                <li><a class="nav-link" href="#"></a></li>
-                <li><a class="nav-link" href="#"></a></li>
+                <li><a class="nav-link"  href="#introdução">introdução</a></li>
+                <li><a  class="nav-link"href="#Primeiro pass">Primeiro passo</a></li>
+                <li><a  class="nav-link"href="#Direção">Direção</a></li>
+                <li><a class="nav-link" href="#Linhas">Linhas</a></li>
+                <li><a class="nav-link" href="#Alinhando items Horizontalmente">Alinhando items Horizontalmente</a></li>
+                <li><a class="nav-link" href="#Alinhando apenas um item">Alinhando apenas um item</a></li>
+                <li><a class="nav-link" href="#Alinhando items">Alinhando items</a></li>
+                <li><a class="nav-link" href="#Alinhando conteudo">Alinhando conteudo</a></li>
+                <li><a class="nav-link" href="#Tamanho dos itens flexiveis">Tamanho dos itens flexiveis</a></li>
+                <li><a class="nav-link" href="#Tamanho maximo dos itens">Tamanho maximo dos itens</a></li>
+                <li><a class="nav-link" href="#Tamanho minimo dos itens">Tamanho minimo dos itens</a></li>
+                <li><a class="nav-link" href="#Abreviando comandos">Abreviando comandos</a></li>
+                <li><a class="nav-link" href="#Mudando ordem dos items">Mudando ordem dos items</a></li>
+                <li><a class="nav-link" href="#Bonus">Bonus</a></li>
             </ul>
         </nav>
 
-        <section class="main-section" id="css_flex_intro">
+        <section class="main-section" id="Introduçao">
             <header>Introduçao</header>
             <p><b>Flexbox </b> é um recurso CSS3 que serve de modelo para desenvolvimento de layouts para websites e aplicações web visando organizar elementos dentro de contêiners de forma flexível conforme sua necessidade. <br>
             E essa flexibilidade se caracteriza pela capacidade de alterar a largura e / ou a altura dos elementos (que são tratados como itens) para se adequarem ao espaço disponível em qualquer dispositivo de exibição.</p>
@@ -35,7 +39,7 @@
             </ul>
         </section>
 
-        <section class="main-section">
+        <section class="main-section" id="Primeiro passo">
             <header>Primeiro passo</header>
             <p>o primeiro passo para começar a utilizar o flexbox precisa adicionar a propriedade <b> display: flex;</b> ou <b> display: inline-flex;</b>  ao seu container.</p>
             <p>A propriedade CSS display espeficica como elementos HTML devem ser apresentados em relação ao tipo de caixa de renderização.
@@ -45,8 +49,8 @@
             <iframe width="100%" height="300" src="//jsfiddle.net/zevolutionz/am5kg0bp/6/embedded/result,html,css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
         </section>
 
-        <section class="main-section">
-            <header>Direçao</header>
+        <section class="main-section" id="Direção">
+            <header>Direção</header>
             <p><b>Flex-direction</b>  é aplicada no contêiner, mas define o fluxo de exibição que os Flex Itens serão dispostos. É esta propriedade que pode mudar o Eixo principal da posição horizontal (Flex Itens aninhados lado a lado em linha) para na vertical (Flex Itens aninhados um abaixo do outro em coluna). Conheça os possíveis valores para esta propriedade:</p>
             <p>O eixo principal é definido por flex-direction, que tem quatro valores possíveis:</p>
             <ul>
@@ -59,8 +63,8 @@
             <iframe width="100%" height="300" src="//jsfiddle.net/zevolutionz/wx83ug7f/7/embedded/result,html,css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
         </section>
 
-        <section class="main-section">
-            <header>Linhas de Início e Fim</header>
+        <section class="main-section" id="Linhas">
+            <header>Linhas</header>
             <p>A propriedade <b>flex-wrap </b> determina se um Flex Container é de linha única ou multilinhas. O que ocorre é que por padrão os Flex Itens tentarão se ajustar dentro de uma linha mesmo que ultrapassem visualmente a largura do elemento pai. O flex-wrap oferece a opção de quebra de linha para que os elementos filhos se ajustem adequadamente.</p>
             <ul>
                 <li><b>nowrap</b> - Este é o valor padrão. Com ele todos os itens inseridos dentro do Flex Container serão dispostos em uma linha mesmo que ultrapasse a largura do contêiner;</li>
@@ -72,7 +76,7 @@
             <p>A propriedade <b>flex-flow</b> é um propriedade de declaração única para escrita das propriedades flex-direction e flex-wrap.</p>
         </section>
 
-        <section class="main-section">
+        <section class="main-section" id="Alinhando items Horizontalmente">
             <header>Alinhando items horizontalmente</header>
            <p><b>Justify-content</b> é uma propriedade que define o alinhamento dos Flex Itens horizontalmente ao longo do eixo principal do contêiner.</p>
            <ul>
@@ -88,7 +92,22 @@
            <p><b>OBS:</b> ao mudar o eixo no <b>flex-direction</b>  o comportamento dos itens também mudará. </p>
         </section>
 
-        <section class="main-section">
+        <section class="main-section" id="Alinhando apenas um item">
+            <header>Alinhando apenas um item</header>
+            <p>a propriedade <b>align-self</b> permite definir um alinhamento de um único Flex Item dentro de um contêiner sobrescrevendo o que foi definido no align-itens do Flex Container. Conheça os possíveis valores para esta propriedade:</p>
+            <ul>
+                <li><b>auto</b> - Este é o valor padrão. Com ele declarado o comportamento definido no container por meio do align-items é respeitado.</li>
+                <li><b>stretch</b> - Neste caso o item será esticado para preencher toda a dimensão do eixo transversal (largura ou altura) igualmente;</li>
+                <li><b>flex-start</b> - Desloca o item para o início do eixo transversal;</li>
+                <li><b>flex-end</b> - Desloca o item para o final do eixo transversal;</li>
+                <li><b>center</b> - O item é centralizado no eixo transversal;</li>
+                <li><b>baseline</b> - Alinha o item a partir da base da primeira linha de texto dos demais itens.</li>
+            </ul>
+            <p>Veja no exemplo abaixo:</p>
+            <iframe width="100%" height="300" src="//jsfiddle.net/zevolutionz/6rbktevu/10/embedded/result,html,css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+        </section>
+
+        <section class="main-section" id="Alinhando items">
             <header>Alinhando items</header>
             <p><b>Align-items</b> é uma propriedade que define como os Flex Itens serão distribuídos ao longo do eixo transversal do contêiner. Conheça os possíveis valores para esta propriedade</p>
             <ul>
@@ -102,7 +121,7 @@
             <iframe width="100%" height="300" src="//jsfiddle.net/zevolutionz/zgey79dv/5/embedded/result,html,css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
         </section>
 
-        <section class="main-section">
+        <section class="main-section" id="Alinhando conteudo">
             <header>Alinhando conteudo</header>
             <p><b>Align-content</b> é uma propriedade que define como as linhas são distribuídas ao longo do eixo transversal do contêiner. Como está propriedade trabalha com a distribuição das linha, ele é a aplicada quando o Flex Container é multilinhas, ou seja, recebe <b>flex-wrap</b>  com o valor <b>wrap</b>. Conheça os possíveis valores para esta propriedade:</p>
             <ul>
@@ -118,28 +137,77 @@
             <p><b>OBS</b>: Com essas mesmas aplicações é possível verificar o comportamento dos Flex Itens mudando o Eixo Principal da posição horizontal para vertical através da propriedade <b>flex-direction</b> com o valor <b>column</b>.</p>
         </section>
 
-        <section class="main-section">
+        <section class="main-section" id="Tamanho dos itens flexiveis">
             <header>Tamanho dos itens flexiveis</header>
-            <p>flex-basis define o tamanho inicial que um Flex Item deve ter antes que o espaço ao seu redor seja distribuído por outras propriedades.</p>
+            <p> <b>flex-basis</b>  define o tamanho inicial que um Flex Item deve ter antes que o espaço ao seu redor seja distribuído por outras propriedades.</p>
+            <p>Quando o eixo principal for horizontal, esta propriedade define a largura mínima antes que espaço restante seja distribuído, quando for vertical defina e altura mínima.</p>
             <p>Veja no exemplo abaixo:</p>
+            <iframe width="100%" height="300" src="//jsfiddle.net/zevolutionz/Loyven8u/6/embedded/result,html,css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+            <p><b>OBS:</b> Ao utilizar o valor auto para flex-basis é possível alterar tamanho de um Flex Item (Largura, caso eixo principal na horizontal e altura, caso eixo principal na vertical) quando conjuntamente usamos width e height. Mas somente nesta situação</p>
         </section>
 
-        <section class="main-section">
-            <header>itens flexiveis</header>
+        <section class="main-section" id="Tamanho maximo dos itens">
+            <header>Tamanho maximo dos itens</header>
             <p>A propriedade <b>flex-grow</b> serve para especificar o fator de crescimento que um Flex Item terá em relação aos outros Flex Itens encontrados em um Flex Container. O valor especificado deve ser um número positivo. Por padrão o valor de flex-grow é 0, ou seja, os Flex Itens não crescem.</p>
             <p>Quanto maior o valor de flex-grow, mais o Flex Item poderá crescer relativamente aos outros items.</p>
             <p>Veja no exemplo abaixo:</p>
             <iframe width="100%" height="300" src="//jsfiddle.net/zevolutionz/bmaf3usj/3/embedded/result,html,css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
         </section>
 
-        <section class="main-section">
-            <header></header>
+        <section class="main-section" id="Tamanho minimo dos itens">
+            <header>Tamanho minimo dos itens</header>
+            <p>Enquanto no flex-grow define a capacidade dos Flex Itens de crescerem o flex-shrink faz exatamente o contrário ele define a redução, ou seja, ele serve para especificar o fator de encolhimento que um Flex Item terá em relação aos outros Flex Itens encontrados em um Flex Container.</p>
+            <ul>
+                <li>Por padrão o valor de flex-shrink é 1, ou seja, os Flex Itens reduzem de tamanho para caber dentro do espaço disponível no contêiner.</li>
+                <li>Quanto maior o valor de flex-shrink, mais o Flex Item poderá reduzir de tamanho relativamente aos outros items.</li>
+            </ul>
             <p>Veja no exemplo abaixo:</p>
+            <iframe width="100%" height="300" src="//jsfiddle.net/zevolutionz/dygL5hx0/2/embedded/result,html,css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
         </section>
 
-        <section class="main-section">
-            <header></header>
+        <section class="main-section" id="Abreviando comandos">
+            <header>Abreviando comandos</header>
+            <p>o comando flex é a abreviatura para flex-grow, flex-shrink, flex-basis combinados nesta sequencia. O padrão é flex: 0 1 auto;. O uso da abreviatura é recomendada em vez de definir as propriedades separadamente.
+                veja o exemplo abaixo:</p>
+            <pre>
+                <code>
+                    <span class="tag">.item</span> {
+                       <span class="pro">flex</span>: 0 1 auto;   
+                   }</code>
+                </pre>
+            <p>A propriedade flex-flow é um propriedade de declaração única para escrita das propriedades flex-direction e flex-wrap.</p>
+            <p>Ao usar as propriedades flex-direction e flex-wrap usualmente a declaração fica da seguinte forma:</p>
+            <pre>
+                <code>
+                    <span class="tag">.container</span> {
+                       <span class="pro">display</span>: flex;
+                        <span class="pro">flex-flow</span>: row wrap;
+                   }</code>
+                </pre>
+            <p>Agora a forma abreviada com flex-flow:</p>
+            <pre>
+                <code>
+                    <span class="tag">.container</span> {
+                       <span class="pro">display</span>: flex;
+                        <span class="pro"> flex-direction</span>: row;
+                        <span class="pro">flex-wrap</span>: wrap;
+                   }</code>
+                </pre>
+        </section>
+
+        <section class="main-section" id="Mudando ordem dos items">
+            <header>Mudando ordem dos items</header>
+            <p>O padrão faz com que os Flex Itens aparecem no contêiner na ordem que são inseridos no HTML. Mas essa ordem pode ser alterada através da propriedade <b>order</b> sendo que se inicia de uma valor menor para o maior.</p>
+            <ul>
+                <li> O valor inicial de <b>order</b> é 0 e também é possível especificar valores negativos.</li>
+            </ul>
             <p>Veja no exemplo abaixo:</p>
+            <iframe width="100%" height="300" src="//jsfiddle.net/zevolutionz/bphfra23/4/embedded/result,html,css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+        </section>
+
+        <section class="main-section" id="Bonus">
+            <header>Bonus</header> 
+            <p>Site onde voce pode praticar <a href="https://flexboxfroggy.com/">Flexbox Froggy</a></p>
         </section>
 
     </main>

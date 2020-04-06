@@ -13,7 +13,12 @@ body{
     background-color: #ffffff;
 }
 .main-section header{
+    width: 100%;
     font-size: 1.5em;
+    color: white;
+    border: 2px solid #b7efcd;
+    background-color: black;
+    padding: 10px;
 }
 .main-section{
     padding-top: 40px;
@@ -36,17 +41,19 @@ iframe{
 }
 pre[data-lang]::before { content: attr(data-lang); display: block; }
 pre{
+    font-size: ;
     margin: 0;
     color: white;
     margin-left: 1%;
     background-color: #20262E;
     border: 1px solid gray;
     border-radius: 5px;
-    /*
-    text-align: left;
-    white-space: pre-line; */
+    white-space: pre-line; 
+    
 }
-code{
+.code,.code span{
+    font-size: 1.2em;
+    margin-left: 5%;
     font-family: monospace;
 }
 .tag{
@@ -64,11 +71,11 @@ code{
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    background-color:#b7efcd;
+    background-color:black;
+    border: 1px solid whitesmoke;
     position: fixed;
     right: 0;
     font-size: 2em;
-    color: #ffffff;
     margin-right: 15px;
     bottom: 30px;
     
@@ -77,7 +84,7 @@ code{
     text-decoration: none;
     display: block;
     transform: rotate(270deg);
-    color: black;
+    color: #b7efcd;
     margin-top: -10px;
     
 }

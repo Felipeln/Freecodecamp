@@ -46,11 +46,11 @@
 
         <section class="main-section" id="Primeiro_passo">
             <header>Primeiro passo</header>
-            <p>o primeiro passo para começar a utilizar o flexbox precisa adicionar a propriedade <b> display: flex;</b> ou <b> display: inline-flex;</b>  ao seu container.</p>
+            <p>O primeiro passo para começar a utilizar o flexbox precisa adicionar a propriedade <b> display: flex;</b> ou <b> display: inline-flex;</b>  ao seu container.</p>
             <p>A propriedade CSS display espeficica como elementos HTML devem ser apresentados em relação ao tipo de caixa de renderização.
 
                 Com o valor “flex” ou “inline-flex” atribuído a esta propriedade, o contêiner e se torna flexível. Consequentemente seus filhos se tornam Flex Itens</p>
-            <p>veja no exemplo abaixo:</p>
+            <p>Veja no exemplo abaixo:</p>
         <code>
             <iframe width="100%" height="300" src="//jsfiddle.net/zevolutionz/am5kg0bp/6/embedded/result,html,css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
         </code>
@@ -66,7 +66,7 @@
                 <li><b>column</b> - Os itens são organizados em forma de colunas iniciando de cima para baixo;</li>
                 <li><b>column-reverse</b> - Os itens são organizados em forma de colunas, só que iniciando de baixo para cima.</li>
             </ul>
-            <p>veja no exemplo abaixo:</p>
+            <p>Veja no exemplo abaixo:</p>
         <code>
             <iframe width="100%" height="300" src="//jsfiddle.net/zevolutionz/wx83ug7f/7/embedded/result,html,css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
         </code>
@@ -80,7 +80,7 @@
                 <li><b>wrap</b> - Ocorrerá a quebra de linha se alguns dos itens ultrapassar a largura do Flex Container. Os itens mais à direita serão deslocados para a linha de baixo;</li>
                 <li><b>wrap-reverse</b> - Também ocorrerá a quebra de linha se alguns dos itens ultrapassar a largura do Flex Container, só que neste caso os itens mais à direita serão deslocados para a linha de cima.</li>
             </ul>
-            <p>veja no exemplo abaixo:</p>
+            <p>Veja no exemplo abaixo:</p>
         <code>
             <iframe width="100%" height="300" src="//jsfiddle.net/zevolutionz/3Leb17ku/11/embedded/result,html,css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
         </code>
@@ -98,7 +98,7 @@
                <li><b>space-around</b> -  Os Flex Itens também são distribuídos ao longo contêiner, onde é criado um espaçamento ao redor dos elementos. Com isso, o primeiro e o último item possuirão margens e não ficaram grudados as extremidades do contêiner;</li>
                <li><b>space-evenly</b> - Os Flex Itens também são distribuídos ao longo contêiner, onde também é criado um espaçamento ao redor dos elementos. O que difere do space-around é que os espaçamentos entre os itens e os espaçamentos nas extremidades do contêiner são distribuídos de forma igualitária.</li>
            </ul>
-           <p>veja no exemplo abaixo:</p>
+           <p>Veja no exemplo abaixo:</p>
            <code>
            <iframe width="100%" height="300" src="//jsfiddle.net/zevolutionz/05y8co9e/5/embedded/result,html,css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
         </code>
@@ -107,7 +107,7 @@
 
         <section class="main-section" id="Alinhando_apenas_um_item">
             <header>Alinhando apenas um item</header>
-            <p>a propriedade <b>align-self</b> permite definir um alinhamento de um único Flex Item dentro de um contêiner sobrescrevendo o que foi definido no align-itens do Flex Container. Conheça os possíveis valores para esta propriedade:</p>
+            <p>A propriedade <b>align-self</b> permite definir um alinhamento de um único Flex Item dentro de um contêiner sobrescrevendo o que foi definido no align-itens do Flex Container. Conheça os possíveis valores para esta propriedade:</p>
             <ul>
                 <li><b>auto</b> - Este é o valor padrão. Com ele declarado o comportamento definido no container por meio do align-items é respeitado.</li>
                 <li><b>stretch</b> - Neste caso o item será esticado para preencher toda a dimensão do eixo transversal (largura ou altura) igualmente;</li>
@@ -158,7 +158,7 @@
 
         <section class="main-section" id="Tamanho_dos_itens_flexiveis">
             <header>Tamanho dos itens flexiveis</header>
-            <p> <b>flex-basis</b>  define o tamanho inicial que um Flex Item deve ter antes que o espaço ao seu redor seja distribuído por outras propriedades.</p>
+            <p> <b>Flex-basis</b>  define o tamanho inicial que um Flex Item deve ter antes que o espaço ao seu redor seja distribuído por outras propriedades.</p>
             <p>Quando o eixo principal for horizontal, esta propriedade define a largura mínima antes que espaço restante seja distribuído, quando for vertical defina e altura mínima.</p>
             <p>Veja no exemplo abaixo:</p>
         <code>
@@ -192,10 +192,10 @@
 
         <section class="main-section" id="Abreviando_comandos">
             <header>Abreviando comandos</header>
-            <p>o comando flex é a abreviatura para flex-grow, flex-shrink, flex-basis combinados nesta sequencia. O padrão é flex: 0 1 auto;. O uso da abreviatura é recomendada em vez de definir as propriedades separadamente.
+            <p>O comando flex é a abreviatura para flex-grow, flex-shrink, flex-basis combinados nesta sequencia. O padrão é flex: 0 1 auto;. O uso da abreviatura é recomendada em vez de definir as propriedades separadamente.
                 veja o exemplo abaixo:</p>
             <pre>
-                <code>
+                <code class="code">
                     <span class="tag">.item</span> {
                        <span class="pro">flex</span>: 0 1 auto;   
                    }</code>
@@ -203,20 +203,21 @@
             <p>A propriedade flex-flow é um propriedade de declaração única para escrita das propriedades flex-direction e flex-wrap.</p>
             <p>Ao usar as propriedades flex-direction e flex-wrap usualmente a declaração fica da seguinte forma:</p>
             <pre>
-                <code>
-                    <span class="tag">.container</span> {
+                <code class="code">
+                        <span class="tag">.container</span> {
                        <span class="pro">display</span>: flex;
                         <span class="pro">flex-flow</span>: row wrap;
                    }</code>
                 </pre>
             <p>Agora a forma abreviada com flex-flow:</p>
             <pre>
-                <code>
+                <code class="code">
                     <span class="tag">.container</span> {
-                       <span class="pro">display</span>: flex;
+                        <span class="pro">display</span>: flex;
                         <span class="pro"> flex-direction</span>: row;
                         <span class="pro">flex-wrap</span>: wrap;
-                   }</code>
+                   }
+                </code>
                 </pre>
         </section>
 

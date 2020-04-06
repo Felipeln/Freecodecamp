@@ -41,7 +41,6 @@ iframe{
 }
 pre[data-lang]::before { content: attr(data-lang); display: block; }
 pre{
-    font-size: ;
     margin: 0;
     color: white;
     margin-left: 1%;

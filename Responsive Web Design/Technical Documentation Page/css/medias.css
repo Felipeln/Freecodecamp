@@ -1,0 +1,33 @@
+@media screen and (min-width: 1450px){
+    .main-section{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .main-section{
+        margin-left: 310px;
+    }
+    iframe{
+        width: 98%;
+    }
+    .btn-top{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 900px){
+    #navbar{
+        position: relative !important ;
+        display:block;
+        height: 45vh;
+        margin: 0 auto;
+        width: 80vw;
+        margin-top: 40px;
+    }
+    .main-section{
+        margin: 0 auto;
+        width: 96%;
+    }
+    
+}

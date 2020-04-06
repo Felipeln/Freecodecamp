@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+#navbar{
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    width: 300px;
+    border: 1px solid black;
+    height: 100vh;
+    overflow-y: scroll;
+}
+#navbar header{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 20px;
+    
+}
+#navbar ul li, #navbar a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+#navbar ul li{
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    color: black;
+    border: 1px solid #363636;
+    background-color: #b7efcd;
+    
+}

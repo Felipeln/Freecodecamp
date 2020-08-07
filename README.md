@@ -32,6 +32,6 @@
 - [Personal Portfolio Webpage](https://codepen.io/felipesln/full/xxwvwyv)
     - HTML5
     - CSS3
-    - JavaScript
+
     
 

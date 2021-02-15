@@ -24,9 +24,13 @@
 #navbar ul li{
     text-align: center;
     width: 100%;
-    padding: 15px;
     color: black;
     border: 1px solid #363636;
     background-color: #b7efcd;
     border-radius: 2px;
+}
+#navbar ul li a{
+  width: 100%;
+  display: block;
+  padding: 15px;
 }

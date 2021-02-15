@@ -60,6 +60,9 @@ label {
   margin: 50px auto;
   border: 2px solid black;
 }
+.Form-group{
+  margin: 30px 0;
+}
 input[type="text"],
 input[type="email"],
 input[type="number"] {
@@ -99,29 +102,7 @@ button#submit{
   box-shadow: none;
   border: solid rgb(0, 0, 0);
 }
-#submit {
-  box-shadow: inset 0px 39px 0px -24px #020202;
-  background: linear-gradient(to bottom, #1f1f1f 5%, #000000 100%);
-  background-color: #000000;
-  border-radius: 4px;
-  border: 1px solid #ffffff;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Arial;
-  font-size: 15px;
-  padding: 6px 15px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #b23e35;
-}
-#submit:hover {
-  background: linear-gradient(to bottom, #1f1f1f 5%, #000000 100%);
-  background-color: #000000;
-}
-#submit:active {
-  position: relative;
-  top: 1px;
-}
+
 
 select.form-control {
   background-color: black;
@@ -137,4 +118,13 @@ select.form-control {
 input[type="radio"] {
   background-color: black;
   color: #f2f2f2;
+  margin-right: 10px;
+}
+input[type="checkbox"]{
+  margin-right: 10px;
+}
+
+textarea{
+  margin: 30px 0;
+  padding: 20px;
 }
